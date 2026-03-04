@@ -1,4 +1,4 @@
-# Project# NBA Player Statistics – Exploratory Data Analysis
+# Project - NBA Player Statistics – Exploratory Data Analysis
 
 ## Dataset
 This project uses the NBA Player dataset (`all_seasons.csv`).
