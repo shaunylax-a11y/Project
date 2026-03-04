@@ -28,6 +28,9 @@ eggs/
 .eggs/
 lib/
 lib64/
+
+.virtual_documents/
+
 parts/
 sdist/
 var/
@@ -119,6 +122,15 @@ ipython_config.py
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 #poetry.lock
 #poetry.toml
+
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+data/*.csv
+data/*.xlsx
+.env
+venv/
+.virtual_documents/
 
 # pdm
 #   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
