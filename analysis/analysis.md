@@ -352,13 +352,26 @@ This confirms how the join works directly in the notebook. The main dataset is m
 
 
 ```python
-df.shape
-df.columns
+print("Shape:", df.shape)
+print("\nColumns:")
+print(df.columns.tolist())
+
+print("\nInfo:")
 df.info()
-df.describe
-df.isna().sum()
+
+print("\nSummary statistics:")
+display(df.describe())
+
+print("\nMissing values:")
+display(df.isna().sum().sort_values(ascending=False))
 ```
 
+    Shape: (12844, 22)
+    
+    Columns:
+    ['Unnamed: 0', 'player_name', 'team_abbreviation', 'age', 'player_height', 'player_weight', 'college', 'country', 'draft_year', 'draft_round', 'draft_number', 'gp', 'pts', 'reb', 'ast', 'net_rating', 'oreb_pct', 'dreb_pct', 'usg_pct', 'ts_pct', 'ast_pct', 'season']
+    
+    Info:
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 12844 entries, 0 to 12843
     Data columns (total 22 columns):
@@ -387,36 +400,216 @@ df.isna().sum()
      20  ast_pct            12844 non-null  float64
      21  season             12844 non-null  object 
     dtypes: float64(12), int64(2), object(8)
-    memory usage: 1.8+ MB
+    memory usage: 2.2+ MB
+    
+    Summary statistics:
 
 
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>age</th>
+      <th>player_height</th>
+      <th>player_weight</th>
+      <th>gp</th>
+      <th>pts</th>
+      <th>reb</th>
+      <th>ast</th>
+      <th>net_rating</th>
+      <th>oreb_pct</th>
+      <th>dreb_pct</th>
+      <th>usg_pct</th>
+      <th>ts_pct</th>
+      <th>ast_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+      <td>12844.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>6421.500000</td>
+      <td>27.045313</td>
+      <td>200.555097</td>
+      <td>100.263279</td>
+      <td>51.154158</td>
+      <td>8.212582</td>
+      <td>3.558486</td>
+      <td>1.824681</td>
+      <td>-2.226339</td>
+      <td>0.054073</td>
+      <td>0.140646</td>
+      <td>0.184641</td>
+      <td>0.513138</td>
+      <td>0.131595</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3707.887763</td>
+      <td>4.339211</td>
+      <td>9.111090</td>
+      <td>12.426628</td>
+      <td>25.084904</td>
+      <td>6.016573</td>
+      <td>2.477885</td>
+      <td>1.800840</td>
+      <td>12.665124</td>
+      <td>0.043335</td>
+      <td>0.062513</td>
+      <td>0.053545</td>
+      <td>0.101724</td>
+      <td>0.094172</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>18.000000</td>
+      <td>160.020000</td>
+      <td>60.327736</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-250.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>3210.750000</td>
+      <td>24.000000</td>
+      <td>193.040000</td>
+      <td>90.718400</td>
+      <td>31.000000</td>
+      <td>3.600000</td>
+      <td>1.800000</td>
+      <td>0.600000</td>
+      <td>-6.400000</td>
+      <td>0.021000</td>
+      <td>0.096000</td>
+      <td>0.149000</td>
+      <td>0.482000</td>
+      <td>0.066000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>6421.500000</td>
+      <td>26.000000</td>
+      <td>200.660000</td>
+      <td>99.790240</td>
+      <td>57.000000</td>
+      <td>6.700000</td>
+      <td>3.000000</td>
+      <td>1.200000</td>
+      <td>-1.300000</td>
+      <td>0.040000</td>
+      <td>0.130500</td>
+      <td>0.181000</td>
+      <td>0.525000</td>
+      <td>0.103000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>9632.250000</td>
+      <td>30.000000</td>
+      <td>208.280000</td>
+      <td>108.862080</td>
+      <td>73.000000</td>
+      <td>11.500000</td>
+      <td>4.700000</td>
+      <td>2.400000</td>
+      <td>3.200000</td>
+      <td>0.083000</td>
+      <td>0.179000</td>
+      <td>0.217000</td>
+      <td>0.563000</td>
+      <td>0.179000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>12843.000000</td>
+      <td>44.000000</td>
+      <td>231.140000</td>
+      <td>163.293120</td>
+      <td>85.000000</td>
+      <td>36.100000</td>
+      <td>16.300000</td>
+      <td>11.700000</td>
+      <td>300.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.500000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
-    Unnamed: 0              0
-    player_name             0
-    team_abbreviation       0
-    age                     0
-    player_height           0
-    player_weight           0
+    
+    Missing values:
+
+
+
     college              1854
-    country                 0
-    draft_year              0
-    draft_round             0
-    draft_number            0
-    gp                      0
+    Unnamed: 0              0
     pts                     0
-    reb                     0
-    ast                     0
-    net_rating              0
-    oreb_pct                0
-    dreb_pct                0
-    usg_pct                 0
-    ts_pct                  0
     ast_pct                 0
+    ts_pct                  0
+    usg_pct                 0
+    dreb_pct                0
+    oreb_pct                0
+    net_rating              0
+    ast                     0
+    reb                     0
+    gp                      0
+    player_name             0
+    draft_number            0
+    draft_round             0
+    draft_year              0
+    country                 0
+    player_weight           0
+    player_height           0
+    age                     0
+    team_abbreviation       0
     season                  0
     dtype: int64
-
 
 
 ## Initial Inspection and Descriptive Analysis
@@ -764,6 +957,130 @@ df.groupby("season")["pts"].mean()
 
 
 
+## Research Questions
+
+This project is guided by the following questions:
+
+1. What does the distribution of scoring look like across all player-season records?
+2. How has average scoring changed across NBA seasons?
+3. Is there a relationship between player usage percentage and scoring output?
+4. What additional insight can be gained by joining team-level conference and division information?
+
+
+```python
+missing_summary = df.isna().sum().reset_index()
+missing_summary.columns = ["column", "missing_values"]
+missing_summary = missing_summary.sort_values("missing_values", ascending=False)
+missing_summary.head(15)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>column</th>
+      <th>missing_values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>college</td>
+      <td>1854</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Unnamed: 0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>pts</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>ast_pct</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>ts_pct</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>usg_pct</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>dreb_pct</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>oreb_pct</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>net_rating</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>ast</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>reb</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>gp</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>player_name</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>draft_number</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>draft_round</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
 
 ```python
 import matplotlib.pyplot as plt
@@ -777,7 +1094,7 @@ plt.show()
 
 
     
-![png](Analysis_files/Analysis_14_0.png)
+![png](Analysis_files/Analysis_16_0.png)
     
 
 
@@ -799,7 +1116,7 @@ plt.show()
 
 
     
-![png](Analysis_files/Analysis_16_0.png)
+![png](Analysis_files/Analysis_18_0.png)
     
 
 
@@ -818,13 +1135,361 @@ plt.show()
 
 
     
-![png](Analysis_files/Analysis_18_0.png)
+![png](Analysis_files/Analysis_20_0.png)
     
 
 
 ### Interpretation of Usage % vs Points Per Game
 
 This scatterplot compares player usage percentage with points per game. There is a clear positive relationship, meaning that players with higher usage percentages generally tend to score more points. However, the relationship is not perfect, since some players have moderate or even high usage without scoring at the same level. This graph is important because it shows that offensive role and scoring are related, but other factors also affect production.
+
+
+```python
+joined_df[["team_abbreviation", "conference", "division"]].head(10)
+joined_df["conference"].value_counts()
+joined_df.groupby("conference")["pts"].mean().round(2)
+joined_df.groupby("division")["pts"].mean().round(2).sort_values(ascending=False)
+```
+
+
+
+
+    division
+    Pacific      8.56
+    Northwest    8.25
+    Southwest    8.22
+    Central      8.16
+    Atlantic     8.14
+    Southeast    8.09
+    Name: pts, dtype: float64
+
+
+
+
+```python
+division_avg_points = joined_df.groupby("division")["pts"].mean().round(2).sort_values(ascending=False)
+division_avg_points
+```
+
+
+
+
+    division
+    Pacific      8.56
+    Northwest    8.25
+    Southwest    8.22
+    Central      8.16
+    Atlantic     8.14
+    Southeast    8.09
+    Name: pts, dtype: float64
+
+
+
+
+```python
+division_avg_points = (
+    joined_df.groupby("division")["pts"]
+    .mean()
+    .round(2)
+    .sort_values(ascending=False)
+    .reset_index()
+)
+
+division_avg_points.columns = ["division", "average_points"]
+division_avg_points
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>division</th>
+      <th>average_points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Pacific</td>
+      <td>8.56</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Northwest</td>
+      <td>8.25</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Southwest</td>
+      <td>8.22</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Central</td>
+      <td>8.16</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Atlantic</td>
+      <td>8.14</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Southeast</td>
+      <td>8.09</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+This table shows the average points per game across all player-season records in each division. Because it includes every type of player-season entry, including lower-scoring and lower-usage players, the averages are much lower than star-player scoring averages. The Pacific division has the highest overall average in this dataset at 8.56 points per game.
+
+
+```python
+top_10_by_division = (
+    joined_df.sort_values(["division", "pts"], ascending=[True, False])
+    .groupby("division")
+    .head(10)
+)
+
+division_top10_avg = (
+    top_10_by_division.groupby("division")["pts"]
+    .mean()
+    .round(2)
+    .sort_values(ascending=False)
+    .reset_index()
+)
+
+division_top10_avg.columns = ["division", "average_points_top_10"]
+division_top10_avg
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>division</th>
+      <th>average_points_top_10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Atlantic</td>
+      <td>30.75</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Pacific</td>
+      <td>30.65</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Southwest</td>
+      <td>30.46</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Northwest</td>
+      <td>30.14</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Central</td>
+      <td>29.81</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Southeast</td>
+      <td>29.52</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+This table shows the average points per game for the top 10 scoring player-season records in each division. This gives a different perspective than averaging all players, because it focuses on the highest-scoring performers in each division. That makes it easier to compare where the strongest offensive player-seasons are concentrated.
+
+
+```python
+highest_scorer_by_division = (
+    joined_df.sort_values("pts", ascending=False)
+    .groupby("division")
+    .head(2)[["division", "player_name", "season", "team_abbreviation", "pts"]]
+    .sort_values("pts", ascending=False)
+    .reset_index(drop=True)
+)
+
+highest_scorer_by_division
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>division</th>
+      <th>player_name</th>
+      <th>season</th>
+      <th>team_abbreviation</th>
+      <th>pts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Southwest</td>
+      <td>James Harden</td>
+      <td>2018-19</td>
+      <td>HOU</td>
+      <td>36.1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Pacific</td>
+      <td>Kobe Bryant</td>
+      <td>2005-06</td>
+      <td>LAL</td>
+      <td>35.4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Southwest</td>
+      <td>James Harden</td>
+      <td>2019-20</td>
+      <td>HOU</td>
+      <td>34.3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Atlantic</td>
+      <td>Joel Embiid</td>
+      <td>2022-23</td>
+      <td>PHI</td>
+      <td>33.1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Atlantic</td>
+      <td>Allen Iverson</td>
+      <td>2005-06</td>
+      <td>PHI</td>
+      <td>33.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Northwest</td>
+      <td>Damian Lillard</td>
+      <td>2022-23</td>
+      <td>POR</td>
+      <td>32.2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Southeast</td>
+      <td>Tracy McGrady</td>
+      <td>2002-03</td>
+      <td>ORL</td>
+      <td>32.1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Pacific</td>
+      <td>Stephen Curry</td>
+      <td>2020-21</td>
+      <td>GSW</td>
+      <td>32.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Northwest</td>
+      <td>Kevin Durant</td>
+      <td>2013-14</td>
+      <td>OKC</td>
+      <td>32.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Central</td>
+      <td>LeBron James</td>
+      <td>2005-06</td>
+      <td>CLE</td>
+      <td>31.4</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Southeast</td>
+      <td>Bradley Beal</td>
+      <td>2020-21</td>
+      <td>WAS</td>
+      <td>31.3</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Central</td>
+      <td>Giannis Antetokounmpo</td>
+      <td>2022-23</td>
+      <td>MIL</td>
+      <td>31.1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 
 ```python
