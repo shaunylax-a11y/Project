@@ -657,7 +657,7 @@ df["season"].nunique(), df["season"].min(), df["season"].max()
 
 
 ```python
-df.sort_values("pts", ascending=False)[["player_name","season","team_abbreviation","pts","reb","ast"]].head(10)
+df.sort_values("reb", ascending=False)[["player_name","season","team_abbreviation","pts","reb","ast"]].head(10)
 ```
 
 
@@ -691,94 +691,94 @@ df.sort_values("pts", ascending=False)[["player_name","season","team_abbreviatio
   </thead>
   <tbody>
     <tr>
-      <th>10227</th>
-      <td>James Harden</td>
-      <td>2018-19</td>
-      <td>HOU</td>
-      <td>36.1</td>
-      <td>6.6</td>
-      <td>7.5</td>
-    </tr>
-    <tr>
-      <th>4163</th>
-      <td>Kobe Bryant</td>
-      <td>2005-06</td>
-      <td>LAL</td>
-      <td>35.4</td>
-      <td>5.3</td>
-      <td>4.5</td>
-    </tr>
-    <tr>
-      <th>10634</th>
-      <td>James Harden</td>
-      <td>2019-20</td>
-      <td>HOU</td>
-      <td>34.3</td>
-      <td>6.6</td>
-      <td>7.5</td>
-    </tr>
-    <tr>
-      <th>12839</th>
-      <td>Joel Embiid</td>
-      <td>2022-23</td>
-      <td>PHI</td>
-      <td>33.1</td>
-      <td>10.2</td>
-      <td>4.2</td>
-    </tr>
-    <tr>
-      <th>4302</th>
-      <td>Allen Iverson</td>
-      <td>2005-06</td>
-      <td>PHI</td>
-      <td>33.0</td>
-      <td>3.2</td>
-      <td>7.4</td>
-    </tr>
-    <tr>
-      <th>12740</th>
-      <td>Luka Doncic</td>
-      <td>2022-23</td>
-      <td>DAL</td>
-      <td>32.4</td>
-      <td>8.6</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>12564</th>
-      <td>Damian Lillard</td>
-      <td>2022-23</td>
-      <td>POR</td>
-      <td>32.2</td>
-      <td>4.8</td>
-      <td>7.3</td>
-    </tr>
-    <tr>
-      <th>2847</th>
-      <td>Tracy McGrady</td>
-      <td>2002-03</td>
-      <td>ORL</td>
-      <td>32.1</td>
-      <td>6.5</td>
-      <td>5.5</td>
-    </tr>
-    <tr>
-      <th>11537</th>
-      <td>Stephen Curry</td>
-      <td>2020-21</td>
+      <th>2070</th>
+      <td>Danny Fortson</td>
+      <td>2000-01</td>
       <td>GSW</td>
-      <td>32.0</td>
-      <td>5.5</td>
-      <td>5.8</td>
+      <td>16.7</td>
+      <td>16.3</td>
+      <td>0.8</td>
     </tr>
     <tr>
-      <th>8013</th>
-      <td>Kevin Durant</td>
-      <td>2013-14</td>
-      <td>OKC</td>
-      <td>32.0</td>
-      <td>7.4</td>
-      <td>5.5</td>
+      <th>188</th>
+      <td>Dennis Rodman</td>
+      <td>1996-97</td>
+      <td>CHI</td>
+      <td>5.7</td>
+      <td>16.1</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <th>9907</th>
+      <td>Andre Drummond</td>
+      <td>2017-18</td>
+      <td>DET</td>
+      <td>15.0</td>
+      <td>16.0</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>10286</th>
+      <td>Andre Drummond</td>
+      <td>2018-19</td>
+      <td>DET</td>
+      <td>17.3</td>
+      <td>15.6</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <th>2948</th>
+      <td>Ben Wallace</td>
+      <td>2002-03</td>
+      <td>DET</td>
+      <td>6.9</td>
+      <td>15.4</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <th>9885</th>
+      <td>DeAndre Jordan</td>
+      <td>2017-18</td>
+      <td>LAC</td>
+      <td>12.0</td>
+      <td>15.2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>6292</th>
+      <td>Kevin Love</td>
+      <td>2010-11</td>
+      <td>MIN</td>
+      <td>20.2</td>
+      <td>15.2</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>10855</th>
+      <td>Andre Drummond</td>
+      <td>2019-20</td>
+      <td>CLE</td>
+      <td>17.7</td>
+      <td>15.2</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <th>760</th>
+      <td>Dennis Rodman</td>
+      <td>1997-98</td>
+      <td>CHI</td>
+      <td>4.7</td>
+      <td>15.0</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <th>8446</th>
+      <td>DeAndre Jordan</td>
+      <td>2014-15</td>
+      <td>LAC</td>
+      <td>11.5</td>
+      <td>15.0</td>
+      <td>0.7</td>
     </tr>
   </tbody>
 </table>
@@ -913,6 +913,288 @@ df.sort_values("pts", ascending=True)[["player_name","season","team_abbreviation
     </tr>
   </tbody>
 </table>
+</div>
+
+
+
+
+```python
+df[df["pts"] > 23.7][["player_name", "season", "team_abbreviation", "pts", "reb", "ast"]].sort_values("pts", ascending=True)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>player_name</th>
+      <th>season</th>
+      <th>team_abbreviation</th>
+      <th>pts</th>
+      <th>reb</th>
+      <th>ast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12692</th>
+      <td>Kawhi Leonard</td>
+      <td>2022-23</td>
+      <td>LAC</td>
+      <td>23.8</td>
+      <td>6.5</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <th>11325</th>
+      <td>Brandon Ingram</td>
+      <td>2020-21</td>
+      <td>NOP</td>
+      <td>23.8</td>
+      <td>4.9</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <th>8303</th>
+      <td>Stephen Curry</td>
+      <td>2014-15</td>
+      <td>GSW</td>
+      <td>23.8</td>
+      <td>4.3</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <th>10136</th>
+      <td>Donovan Mitchell</td>
+      <td>2018-19</td>
+      <td>UTA</td>
+      <td>23.8</td>
+      <td>4.1</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <th>12315</th>
+      <td>Paul George</td>
+      <td>2022-23</td>
+      <td>LAC</td>
+      <td>23.8</td>
+      <td>6.1</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4302</th>
+      <td>Allen Iverson</td>
+      <td>2005-06</td>
+      <td>PHI</td>
+      <td>33.0</td>
+      <td>3.2</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <th>12839</th>
+      <td>Joel Embiid</td>
+      <td>2022-23</td>
+      <td>PHI</td>
+      <td>33.1</td>
+      <td>10.2</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <th>10634</th>
+      <td>James Harden</td>
+      <td>2019-20</td>
+      <td>HOU</td>
+      <td>34.3</td>
+      <td>6.6</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <th>4163</th>
+      <td>Kobe Bryant</td>
+      <td>2005-06</td>
+      <td>LAL</td>
+      <td>35.4</td>
+      <td>5.3</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <th>10227</th>
+      <td>James Harden</td>
+      <td>2018-19</td>
+      <td>HOU</td>
+      <td>36.1</td>
+      <td>6.6</td>
+      <td>7.5</td>
+    </tr>
+  </tbody>
+</table>
+<p>278 rows × 6 columns</p>
+</div>
+
+
+
+
+```python
+df[(df["pts"] > 22.4) & (df["reb"] > 5.3)][["player_name", "season", "team_abbreviation", "pts", "reb", "ast"]].sort_values("pts", ascending=True)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>player_name</th>
+      <th>season</th>
+      <th>team_abbreviation</th>
+      <th>pts</th>
+      <th>reb</th>
+      <th>ast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6520</th>
+      <td>Blake Griffin</td>
+      <td>2010-11</td>
+      <td>LAC</td>
+      <td>22.5</td>
+      <td>12.1</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <th>1413</th>
+      <td>Kobe Bryant</td>
+      <td>1999-00</td>
+      <td>LAL</td>
+      <td>22.5</td>
+      <td>6.3</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <th>11029</th>
+      <td>Zion Williamson</td>
+      <td>2019-20</td>
+      <td>NOP</td>
+      <td>22.5</td>
+      <td>6.3</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <th>4275</th>
+      <td>Chris Bosh</td>
+      <td>2005-06</td>
+      <td>TOR</td>
+      <td>22.5</td>
+      <td>9.2</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <th>1320</th>
+      <td>Michael Finley</td>
+      <td>1999-00</td>
+      <td>DAL</td>
+      <td>22.6</td>
+      <td>6.3</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2847</th>
+      <td>Tracy McGrady</td>
+      <td>2002-03</td>
+      <td>ORL</td>
+      <td>32.1</td>
+      <td>6.5</td>
+      <td>5.5</td>
+    </tr>
+    <tr>
+      <th>12740</th>
+      <td>Luka Doncic</td>
+      <td>2022-23</td>
+      <td>DAL</td>
+      <td>32.4</td>
+      <td>8.6</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>12839</th>
+      <td>Joel Embiid</td>
+      <td>2022-23</td>
+      <td>PHI</td>
+      <td>33.1</td>
+      <td>10.2</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <th>10634</th>
+      <td>James Harden</td>
+      <td>2019-20</td>
+      <td>HOU</td>
+      <td>34.3</td>
+      <td>6.6</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <th>10227</th>
+      <td>James Harden</td>
+      <td>2018-19</td>
+      <td>HOU</td>
+      <td>36.1</td>
+      <td>6.6</td>
+      <td>7.5</td>
+    </tr>
+  </tbody>
+</table>
+<p>234 rows × 6 columns</p>
 </div>
 
 
@@ -1094,7 +1376,7 @@ plt.show()
 
 
     
-![png](Analysis_files/Analysis_16_0.png)
+![png](analysis_files/analysis_18_0.png)
     
 
 
@@ -1116,7 +1398,7 @@ plt.show()
 
 
     
-![png](Analysis_files/Analysis_18_0.png)
+![png](analysis_files/analysis_20_0.png)
     
 
 
@@ -1135,7 +1417,7 @@ plt.show()
 
 
     
-![png](Analysis_files/Analysis_20_0.png)
+![png](analysis_files/analysis_22_0.png)
     
 
 
@@ -1493,5 +1775,96 @@ highest_scorer_by_division
 
 
 ```python
+missing_summary = df.isna().sum().reset_index()
+missing_summary.columns = ["column", "missing_values"]
+missing_summary = missing_summary.sort_values("missing_values", ascending=False)
 
+top_scorers = df[df["pts"] > 20][
+    ["player_name", "season", "team_abbreviation", "pts", "reb", "ast"]
+].sort_values("pts", ascending=False)
+
+conference_summary = joined_df.groupby("conference").agg(
+    player_season_records=("player_name", "count"),
+    avg_points=("pts", "mean"),
+    avg_rebounds=("reb", "mean"),
+    avg_assists=("ast", "mean")
+).round(2)
+
+division_summary = joined_df.groupby("division").agg(
+    player_season_records=("player_name", "count"),
+    avg_points=("pts", "mean")
+).round(2).sort_values("avg_points", ascending=False)
+
+season_scoring_summary = df.groupby("season").agg(
+    avg_points=("pts", "mean"),
+    avg_rebounds=("reb", "mean"),
+    avg_assists=("ast", "mean")
+).round(2)
 ```
+
+
+```python
+missing_summary.to_csv("../results/missing_values_summary.csv", index=False)
+top_scorers.to_csv("../results/top_scorers.csv", index=False)
+conference_summary.to_csv("../results/conference_summary.csv")
+division_summary.to_csv("../results/division_summary.csv")
+season_scoring_summary.to_csv("../results/season_scoring_summary.csv")
+```
+
+
+```python
+conference_avg_points = (
+    joined_df.groupby("conference")["pts"]
+    .mean()
+    .round(2)
+    .sort_values(ascending=False)
+    .reset_index()
+)
+
+conference_avg_points.columns = ["conference", "average_points"]
+conference_avg_points
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>conference</th>
+      <th>average_points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Western</td>
+      <td>8.35</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Eastern</td>
+      <td>8.13</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+This table shows the average points per game by conference after the join. It demonstrates that the joined dataset can now be grouped at a broader level than the original player dataset alone, which makes the analysis more flexible and informative.

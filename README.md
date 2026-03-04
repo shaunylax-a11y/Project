@@ -34,5 +34,12 @@ The goals of this project are to:
 ## Note on Data
 Raw data files are excluded from GitHub using `.gitignore`.
 
+## Key Outputs
+- Exploratory analysis notebook of NBA player statistics
+- Exported HTML and Markdown notebook versions
+- Joined dataset with conference and division information
+- Summary tables saved in the `results/` folder
+- Saved figures showing distribution, trends over time, and variable relationships
+
 ## AI Use
-AI was used to help with troubleshooting, project organization, documentation planning, and clarifying Git/GitHub steps. Final review and decisions were completed by me.
+AI was used to help with troubleshooting, project organization, documentation planning, and clarifying Git/GitHub steps, as well as code assitance. Final review and decisions were completed by me.

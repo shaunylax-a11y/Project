@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Analysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>analysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -8301,10 +8301,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"pts"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[[</span><span class="s2">"player_name"</span><span class="p">,</span><span class="s2">"season"</span><span class="p">,</span><span class="s2">"team_abbreviation"</span><span class="p">,</span><span class="s2">"pts"</span><span class="p">,</span><span class="s2">"reb"</span><span class="p">,</span><span class="s2">"ast"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"reb"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[[</span><span class="s2">"player_name"</span><span class="p">,</span><span class="s2">"season"</span><span class="p">,</span><span class="s2">"team_abbreviation"</span><span class="p">,</span><span class="s2">"pts"</span><span class="p">,</span><span class="s2">"reb"</span><span class="p">,</span><span class="s2">"ast"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8315,7 +8315,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8345,94 +8345,94 @@ dtype: int64</pre>
 </thead>
 <tbody>
 <tr>
-<th>10227</th>
-<td>James Harden</td>
-<td>2018-19</td>
-<td>HOU</td>
-<td>36.1</td>
-<td>6.6</td>
-<td>7.5</td>
-</tr>
-<tr>
-<th>4163</th>
-<td>Kobe Bryant</td>
-<td>2005-06</td>
-<td>LAL</td>
-<td>35.4</td>
-<td>5.3</td>
-<td>4.5</td>
-</tr>
-<tr>
-<th>10634</th>
-<td>James Harden</td>
-<td>2019-20</td>
-<td>HOU</td>
-<td>34.3</td>
-<td>6.6</td>
-<td>7.5</td>
-</tr>
-<tr>
-<th>12839</th>
-<td>Joel Embiid</td>
-<td>2022-23</td>
-<td>PHI</td>
-<td>33.1</td>
-<td>10.2</td>
-<td>4.2</td>
-</tr>
-<tr>
-<th>4302</th>
-<td>Allen Iverson</td>
-<td>2005-06</td>
-<td>PHI</td>
-<td>33.0</td>
-<td>3.2</td>
-<td>7.4</td>
-</tr>
-<tr>
-<th>12740</th>
-<td>Luka Doncic</td>
-<td>2022-23</td>
-<td>DAL</td>
-<td>32.4</td>
-<td>8.6</td>
-<td>8.0</td>
-</tr>
-<tr>
-<th>12564</th>
-<td>Damian Lillard</td>
-<td>2022-23</td>
-<td>POR</td>
-<td>32.2</td>
-<td>4.8</td>
-<td>7.3</td>
-</tr>
-<tr>
-<th>2847</th>
-<td>Tracy McGrady</td>
-<td>2002-03</td>
-<td>ORL</td>
-<td>32.1</td>
-<td>6.5</td>
-<td>5.5</td>
-</tr>
-<tr>
-<th>11537</th>
-<td>Stephen Curry</td>
-<td>2020-21</td>
+<th>2070</th>
+<td>Danny Fortson</td>
+<td>2000-01</td>
 <td>GSW</td>
-<td>32.0</td>
-<td>5.5</td>
-<td>5.8</td>
+<td>16.7</td>
+<td>16.3</td>
+<td>0.8</td>
 </tr>
 <tr>
-<th>8013</th>
-<td>Kevin Durant</td>
-<td>2013-14</td>
-<td>OKC</td>
-<td>32.0</td>
-<td>7.4</td>
-<td>5.5</td>
+<th>188</th>
+<td>Dennis Rodman</td>
+<td>1996-97</td>
+<td>CHI</td>
+<td>5.7</td>
+<td>16.1</td>
+<td>3.1</td>
+</tr>
+<tr>
+<th>9907</th>
+<td>Andre Drummond</td>
+<td>2017-18</td>
+<td>DET</td>
+<td>15.0</td>
+<td>16.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<th>10286</th>
+<td>Andre Drummond</td>
+<td>2018-19</td>
+<td>DET</td>
+<td>17.3</td>
+<td>15.6</td>
+<td>1.4</td>
+</tr>
+<tr>
+<th>2948</th>
+<td>Ben Wallace</td>
+<td>2002-03</td>
+<td>DET</td>
+<td>6.9</td>
+<td>15.4</td>
+<td>1.6</td>
+</tr>
+<tr>
+<th>9885</th>
+<td>DeAndre Jordan</td>
+<td>2017-18</td>
+<td>LAC</td>
+<td>12.0</td>
+<td>15.2</td>
+<td>1.5</td>
+</tr>
+<tr>
+<th>6292</th>
+<td>Kevin Love</td>
+<td>2010-11</td>
+<td>MIN</td>
+<td>20.2</td>
+<td>15.2</td>
+<td>2.5</td>
+</tr>
+<tr>
+<th>10855</th>
+<td>Andre Drummond</td>
+<td>2019-20</td>
+<td>CLE</td>
+<td>17.7</td>
+<td>15.2</td>
+<td>2.7</td>
+</tr>
+<tr>
+<th>760</th>
+<td>Dennis Rodman</td>
+<td>1997-98</td>
+<td>CHI</td>
+<td>4.7</td>
+<td>15.0</td>
+<td>2.9</td>
+</tr>
+<tr>
+<th>8446</th>
+<td>DeAndre Jordan</td>
+<td>2014-15</td>
+<td>LAC</td>
+<td>11.5</td>
+<td>15.0</td>
+<td>0.7</td>
 </tr>
 </tbody>
 </table>
@@ -8581,6 +8581,316 @@ dtype: int64</pre>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=35450f75-adab-452c-a5c6-a440310145c0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">"pts"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">23.7</span><span class="p">][[</span><span class="s2">"player_name"</span><span class="p">,</span> <span class="s2">"season"</span><span class="p">,</span> <span class="s2">"team_abbreviation"</span><span class="p">,</span> <span class="s2">"pts"</span><span class="p">,</span> <span class="s2">"reb"</span><span class="p">,</span> <span class="s2">"ast"</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"pts"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>player_name</th>
+<th>season</th>
+<th>team_abbreviation</th>
+<th>pts</th>
+<th>reb</th>
+<th>ast</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>12692</th>
+<td>Kawhi Leonard</td>
+<td>2022-23</td>
+<td>LAC</td>
+<td>23.8</td>
+<td>6.5</td>
+<td>3.9</td>
+</tr>
+<tr>
+<th>11325</th>
+<td>Brandon Ingram</td>
+<td>2020-21</td>
+<td>NOP</td>
+<td>23.8</td>
+<td>4.9</td>
+<td>4.9</td>
+</tr>
+<tr>
+<th>8303</th>
+<td>Stephen Curry</td>
+<td>2014-15</td>
+<td>GSW</td>
+<td>23.8</td>
+<td>4.3</td>
+<td>7.7</td>
+</tr>
+<tr>
+<th>10136</th>
+<td>Donovan Mitchell</td>
+<td>2018-19</td>
+<td>UTA</td>
+<td>23.8</td>
+<td>4.1</td>
+<td>4.2</td>
+</tr>
+<tr>
+<th>12315</th>
+<td>Paul George</td>
+<td>2022-23</td>
+<td>LAC</td>
+<td>23.8</td>
+<td>6.1</td>
+<td>5.1</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>4302</th>
+<td>Allen Iverson</td>
+<td>2005-06</td>
+<td>PHI</td>
+<td>33.0</td>
+<td>3.2</td>
+<td>7.4</td>
+</tr>
+<tr>
+<th>12839</th>
+<td>Joel Embiid</td>
+<td>2022-23</td>
+<td>PHI</td>
+<td>33.1</td>
+<td>10.2</td>
+<td>4.2</td>
+</tr>
+<tr>
+<th>10634</th>
+<td>James Harden</td>
+<td>2019-20</td>
+<td>HOU</td>
+<td>34.3</td>
+<td>6.6</td>
+<td>7.5</td>
+</tr>
+<tr>
+<th>4163</th>
+<td>Kobe Bryant</td>
+<td>2005-06</td>
+<td>LAL</td>
+<td>35.4</td>
+<td>5.3</td>
+<td>4.5</td>
+</tr>
+<tr>
+<th>10227</th>
+<td>James Harden</td>
+<td>2018-19</td>
+<td>HOU</td>
+<td>36.1</td>
+<td>6.6</td>
+<td>7.5</td>
+</tr>
+</tbody>
+</table>
+<p>278 rows × 6 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=36406bab-d714-4896-872c-863fdd194f3f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">"pts"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">22.4</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"reb"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">5.3</span><span class="p">)][[</span><span class="s2">"player_name"</span><span class="p">,</span> <span class="s2">"season"</span><span class="p">,</span> <span class="s2">"team_abbreviation"</span><span class="p">,</span> <span class="s2">"pts"</span><span class="p">,</span> <span class="s2">"reb"</span><span class="p">,</span> <span class="s2">"ast"</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"pts"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>player_name</th>
+<th>season</th>
+<th>team_abbreviation</th>
+<th>pts</th>
+<th>reb</th>
+<th>ast</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>6520</th>
+<td>Blake Griffin</td>
+<td>2010-11</td>
+<td>LAC</td>
+<td>22.5</td>
+<td>12.1</td>
+<td>3.8</td>
+</tr>
+<tr>
+<th>1413</th>
+<td>Kobe Bryant</td>
+<td>1999-00</td>
+<td>LAL</td>
+<td>22.5</td>
+<td>6.3</td>
+<td>4.9</td>
+</tr>
+<tr>
+<th>11029</th>
+<td>Zion Williamson</td>
+<td>2019-20</td>
+<td>NOP</td>
+<td>22.5</td>
+<td>6.3</td>
+<td>2.1</td>
+</tr>
+<tr>
+<th>4275</th>
+<td>Chris Bosh</td>
+<td>2005-06</td>
+<td>TOR</td>
+<td>22.5</td>
+<td>9.2</td>
+<td>2.6</td>
+</tr>
+<tr>
+<th>1320</th>
+<td>Michael Finley</td>
+<td>1999-00</td>
+<td>DAL</td>
+<td>22.6</td>
+<td>6.3</td>
+<td>5.3</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>2847</th>
+<td>Tracy McGrady</td>
+<td>2002-03</td>
+<td>ORL</td>
+<td>32.1</td>
+<td>6.5</td>
+<td>5.5</td>
+</tr>
+<tr>
+<th>12740</th>
+<td>Luka Doncic</td>
+<td>2022-23</td>
+<td>DAL</td>
+<td>32.4</td>
+<td>8.6</td>
+<td>8.0</td>
+</tr>
+<tr>
+<th>12839</th>
+<td>Joel Embiid</td>
+<td>2022-23</td>
+<td>PHI</td>
+<td>33.1</td>
+<td>10.2</td>
+<td>4.2</td>
+</tr>
+<tr>
+<th>10634</th>
+<td>James Harden</td>
+<td>2019-20</td>
+<td>HOU</td>
+<td>34.3</td>
+<td>6.6</td>
+<td>7.5</td>
+</tr>
+<tr>
+<th>10227</th>
+<td>James Harden</td>
+<td>2018-19</td>
+<td>HOU</td>
+<td>36.1</td>
+<td>6.6</td>
+<td>7.5</td>
+</tr>
+</tbody>
+</table>
+<p>234 rows × 6 columns</p>
 </div>
 </div>
 </div>
@@ -9355,12 +9665,135 @@ Name: pts, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">missing_summary</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">missing_summary</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"column"</span><span class="p">,</span> <span class="s2">"missing_values"</span><span class="p">]</span>
+<span class="n">missing_summary</span> <span class="o">=</span> <span class="n">missing_summary</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"missing_values"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">top_scorers</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">"pts"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">][</span>
+    <span class="p">[</span><span class="s2">"player_name"</span><span class="p">,</span> <span class="s2">"season"</span><span class="p">,</span> <span class="s2">"team_abbreviation"</span><span class="p">,</span> <span class="s2">"pts"</span><span class="p">,</span> <span class="s2">"reb"</span><span class="p">,</span> <span class="s2">"ast"</span><span class="p">]</span>
+<span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"pts"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">conference_summary</span> <span class="o">=</span> <span class="n">joined_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"conference"</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>
+    <span class="n">player_season_records</span><span class="o">=</span><span class="p">(</span><span class="s2">"player_name"</span><span class="p">,</span> <span class="s2">"count"</span><span class="p">),</span>
+    <span class="n">avg_points</span><span class="o">=</span><span class="p">(</span><span class="s2">"pts"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">),</span>
+    <span class="n">avg_rebounds</span><span class="o">=</span><span class="p">(</span><span class="s2">"reb"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">),</span>
+    <span class="n">avg_assists</span><span class="o">=</span><span class="p">(</span><span class="s2">"ast"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">division_summary</span> <span class="o">=</span> <span class="n">joined_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"division"</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>
+    <span class="n">player_season_records</span><span class="o">=</span><span class="p">(</span><span class="s2">"player_name"</span><span class="p">,</span> <span class="s2">"count"</span><span class="p">),</span>
+    <span class="n">avg_points</span><span class="o">=</span><span class="p">(</span><span class="s2">"pts"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"avg_points"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">season_scoring_summary</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"season"</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>
+    <span class="n">avg_points</span><span class="o">=</span><span class="p">(</span><span class="s2">"pts"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">),</span>
+    <span class="n">avg_rebounds</span><span class="o">=</span><span class="p">(</span><span class="s2">"reb"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">),</span>
+    <span class="n">avg_assists</span><span class="o">=</span><span class="p">(</span><span class="s2">"ast"</span><span class="p">,</span> <span class="s2">"mean"</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=13d2a94b-ab50-40e5-9c3c-00dd6f297b78">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">missing_summary</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"../results/missing_values_summary.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">top_scorers</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"../results/top_scorers.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">conference_summary</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"../results/conference_summary.csv"</span><span class="p">)</span>
+<span class="n">division_summary</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"../results/division_summary.csv"</span><span class="p">)</span>
+<span class="n">season_scoring_summary</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"../results/season_scoring_summary.csv"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dadc6c9b-9870-4fa2-98af-0d3d9efa1e91">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">conference_avg_points</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">joined_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"conference"</span><span class="p">)[</span><span class="s2">"pts"</span><span class="p">]</span>
+    <span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="p">)</span>
+
+<span class="n">conference_avg_points</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"conference"</span><span class="p">,</span> <span class="s2">"average_points"</span><span class="p">]</span>
+<span class="n">conference_avg_points</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>conference</th>
+<th>average_points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Western</td>
+<td>8.35</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Eastern</td>
+<td>8.13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=22cc068f-2ede-4af5-acbc-db24cd19a28c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>This table shows the average points per game by conference after the join. It demonstrates that the joined dataset can now be grouped at a broader level than the original player dataset alone, which makes the analysis more flexible and informative.</p>
 </div>
 </div>
 </div>
